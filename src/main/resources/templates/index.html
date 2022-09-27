@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+</head>
+<body>
+<div style="text-align: center;"><h2>WellCome to Library</h2></div>
+<ul>
+    <h3><b>                    Authentication</b></h3>
+    <li>POST:       /user-post           (@RequestParam (email, login, password, role, status, book_id))</li>
+    <li>POST:       /auth/login          (@RequestParam   (email, password))</li>
+    <li>POST:       /auth/logout       </li><br>
+    <li>Postman -> Headers (KEY: Authorization, VALUE: Token)</li>
+</ul>
+<ul>
+    <h3><b>                    BookTable</b></h3>
+    <li>GET:         /book               USER, ADMIN</li>
+    <li>GET 1:      /book/id           USER, ADMIN</li>
+    <li>POST:       /book-post       ADMIN</li>
+    <li>PUT:         /book-put         ADMIN</li>
+    <li>DELETE: /book-del/id     ADMIN</li>
+</ul>
+<ul>
+    <h3><b>                   AuthorTable</b></h3>
+    <li>GET:         /author               USER, ADMIN</li>
+    <li>GET 1:      /author/id           USER, ADMIN</li>
+    <li>POST:       /author-post       ADMIN</li>
+    <li>PUT:         /author-put         ADMIN</li>
+    <li>DELETE: /author-del/id     ADMIN</li>
+</ul>
+<ul>
+    <h3><b>                   UserTable</b></h3>
+    <li>GET:         /user               ADMIN</li>
+    <li>GET 1:      /user/id           ADMIN</li>
+    <li>PUT:         /user-put         ADMIN</li>
+    <li>DELETE: /user-del/id     ADMIN</li>
+</ul>
+
+</body>
+</html>
